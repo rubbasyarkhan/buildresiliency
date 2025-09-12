@@ -103,13 +103,13 @@
   <section class="bg-[#00196E] text-white px-6 py-20">
     <div class="container mx-auto flex flex-col md:flex-row items-center justify-center gap-32">
 
-      <!-- Profile Card -->
+      <!-- Profile Card 1 -->
       <div class="profile-card flex flex-col items-start text-left max-w-md relative" data-person="arianna"
         data-name="Arianna Ottavianelli" data-title="Cancer Survivor"
         data-description="Arianna faced a life-changing diagnosis but overcame it with courage and determination. Hear how she built resiliency and continues to inspire others."
         data-video="https://www.youtube.com/embed/YOUR_ARIANNA_VIDEO_ID">
         <!-- Image Container -->
-        <div class="relative  -mt-4 z-10">
+        <div class="imageContainer relative  -mt-4 z-10">
           <img
             src="https://static.wixstatic.com/media/ec3230_61046ea43dac483ebb16ce65686fe5b9~mv2.png/v1/fill/w_566,h_538,al_c,q_85/Untitled-1-04.png"
             alt="Arianna Ottavianelli portrait" class="w-56 h-56 object-cover bg-[#2dc4e8] shadow-lg ">
@@ -130,27 +130,27 @@
           <h3 class="text-3xl font-extrabold leading-snug">Arianna <br> Ottavianelli</h3>
 
           <!-- Icons -->
-          <div class="flex gap-3 mt-4">
+          <div id="profile-icons" class=" flex gap-3 mt-4">
             <img
               src="https://static.wixstatic.com/media/ec3230_2236b60bcf35436a97fd4579b3d1dbd7~mv2.png/v1/fill/w_110,h_110,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Skill_Perseverance.png"
-              alt="Perseverance Icon" class="h-14 w-14">
+              alt="Perseverance Icon" class="h-14 w-14" data-modal-key="Perseverance">
             <img
               src="https://static.wixstatic.com/media/ec3230_b95fb1e80f81427ebf22837bfeabc001~mv2.png/v1/fill/w_108,h_108,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Skill_Grit.png"
-              alt="Grit Icon" class="h-14 w-14">
+              alt="Grit Icon" class="h-14 w-14" data-modal-key="Grit">
             <img
               src="https://static.wixstatic.com/media/ec3230_0f3736c65b6548598250e9f4927313a4~mv2.png/v1/fill/w_108,h_108,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Skill_Empathy.png"
-              alt="Empathy Icon" class="h-14 w-14">
+              alt="Empathy Icon" class="h-14 w-14" data-modal-key="Empathy">
           </div>
         </div>
       </div>
 
-      <!-- Duplicate the same card for the second profile -->
+      <!-- profile card 2-->
       <div class="flex profile-card flex-col items-start text-left max-w-md relative" data-person="zach"
         data-name="Zach Karpinsky" data-title="UF Student | Car Accident Survivor"
         data-description="Zach was expected to live his life to the fullest, until a car accident changed everything. Hear how Zach overcame adversity and used resiliency skills to push forward."
         data-video="https://www.youtube.com/embed/YOUR_ZACH_VIDEO_ID">
         <!-- Image Container -->
-        <div class="relative  -mt-4 z-10">
+        <div class="  imageContainer relative  -mt-4 z-10">
           <img
             src="https://static.wixstatic.com/media/ec3230_8d6d965a370342ca8f1404502c68fd03~mv2.png/v1/fill/w_564,h_538,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/ec3230_8d6d965a370342ca8f1404502c68fd03~mv2.png"
             alt="Arianna Ottavianelli portrait" class="w-56 h-56 object-cover bg-[#2dc4e8] shadow-lg">
@@ -172,16 +172,16 @@
             Karpinsky</h3>
 
           <!-- Icons -->
-          <div class="flex gap-3 mt-4">
+          <div id="profile-icons" class=" flex gap-3 mt-4">
             <img
               src="https://static.wixstatic.com/media/ec3230_fea834e7361042dd848ae3ae73955864~mv2.png/v1/fill/w_110,h_110,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Skill_Responsibility.png"
-              alt="Perseverance Icon" class="h-14 w-14">
+              alt="Perseverance Icon" class="h-14 w-14" data-modal-key="Responsibility">
             <img
               src="https://static.wixstatic.com/media/ec3230_fe408358363b49b0a11bd86c7e17fd31~mv2.png/v1/fill/w_108,h_108,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Skill_Self%20Awareness.png"
-              alt="Grit Icon" class="h-14 w-14">
+              alt="Grit Icon" class="h-14 w-14" data-modal-key="Self-Awareness & Self-Management">
             <img
               src="https://static.wixstatic.com/media/ec3230_2236b60bcf35436a97fd4579b3d1dbd7~mv2.png/v1/fill/w_110,h_110,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Skill_Perseverance.png"
-              alt="Empathy Icon" class="h-14 w-14">
+              alt="Empathy Icon" class="h-14 w-14" data-modal-key="Perseverance">
           </div>
         </div>
       </div>
@@ -228,39 +228,125 @@
 
 
 
-<!-- Footer -->
-<footer class="bg-[#002060] text-white text-center px-6 py-10">
-  <!-- Logo Row -->
-  <div class="flex flex-wrap justify-center items-center gap-6">
-    <img
-      src="https://static.wixstatic.com/media/ec3230_e8b3f996ea0c4641a5b2e839ab2cbb5d~mv2.png/v1/fill/w_338,h_162,al_c,q_85/Secondary%20Logo.png"
-      alt="Footer Logo 1" class="h-16">
-    <img
-      src="https://static.wixstatic.com/media/ec3230_c33d49fa76f54a7c966a33bac15ef62d~mv2.png/v1/fill/w_522,h_146,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/ec3230_c33d49fa76f54a7c966a33bac15ef62d~mv2.png"
-      alt="Footer Logo 2" class="h-16">
+  <!-- Footer -->
+  <footer class="bg-[#002060] text-white text-center px-6 py-10">
+    <!-- Logo Row -->
+    <div class="flex flex-wrap justify-center items-center gap-6">
+      <img
+        src="https://static.wixstatic.com/media/ec3230_e8b3f996ea0c4641a5b2e839ab2cbb5d~mv2.png/v1/fill/w_338,h_162,al_c,q_85/Secondary%20Logo.png"
+        alt="Footer Logo 1" class="h-16">
+      <img
+        src="https://static.wixstatic.com/media/ec3230_c33d49fa76f54a7c966a33bac15ef62d~mv2.png/v1/fill/w_522,h_146,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/ec3230_c33d49fa76f54a7c966a33bac15ef62d~mv2.png"
+        alt="Footer Logo 2" class="h-16">
+    </div>
+
+    <!-- Nav Links -->
+    <ul class="flex flex-wrap justify-center gap-6 mt-4 text-sm">
+      <li><a href="#" class="hover:underline">Home</a></li>
+      <li><a href="#" class="hover:underline">Reading List</a></li>
+      <li><a href="#" class="hover:underline">Real Stories</a></li>
+      <li><a href="#" class="hover:underline">Resiliency Coaches</a></li>
+      <li><a href="#" class="hover:underline">Additional Resources</a></li>
+      <li><a href="#" class="hover:underline">Contact</a></li>
+    </ul>
+
+    <!-- Copyright -->
+    <p class="text-xs mt-4 text-[#00CCD2]">&copy; 2025 Resiliency Florida <br>| Privacy Policy | Accessibility Statement
+    </p>
+  </footer>
+
+  <!-- MODAL -->
+  <div id="icon-modal" class="fixed inset-0 z-50 hidden bg-blue-900 bg-opacity-50 flex items-center justify-center">
+    <div class="bg-white p-12 relative w-[800px] max-w-[95%] text-center rounded-lg shadow-2xl">
+      <!-- Close button -->
+      <button id="close-modal"
+        class="absolute top-6 right-6 text-yellow-500 text-4xl font-bold hover:text-yellow-600 transition">
+        &times;
+      </button>
+
+      <!-- Icon + Title -->
+      <div class="flex items-center justify-center mb-6">
+        <!-- Dynamic Icon -->
+        <div class="border-r-4 border-cyan-400  text-left">
+          <img id="modal-icon-img" src="" alt="" class="w-20 h-20 " />
+        </div>
+        <!-- Divider + Dynamic Title -->
+        <div class="ml-4">
+          <h2 id="modal-icon-title" class="text-3xl font-extrabold text-blue-900 leading-snug"></h2>
+        </div>
+      </div>
+
+      <!-- Dynamic Subtitle / Description -->
+      <p id="modal-icon-desc" class="text-blue-900 text-2xl font-bold mb-10 max-w-xl mx-auto leading-relaxed"></p>
+      <div>
+        <!-- Dynamic Buttons -->
+        <div class="grid grid-cols-2 gap-4 max-w-lg mx-auto">
+          <a id="guide-k2" href="./files/k2-guide.pdf" download
+            class="bg-yellow-400 hover:bg-yellow-500 transition text-white font-bold py-3 px-4 rounded-md flex justify-between items-center">
+            K-2 Parent Guide
+            <span class="ml-2 text-xl">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-arrow-down-to-line-icon lucide-arrow-down-to-line">
+                <path d="M12 17V3" />
+                <path d="m6 11 6 6 6-6" />
+                <path d="M19 21H5" />
+              </svg>
+            </span>
+          </a>
+
+          <a id="guide-3-5" href="./files/3-5-guide.pdf" download
+            class="bg-yellow-400 hover:bg-yellow-500 transition text-white font-bold py-3 px-4 rounded-md flex justify-between items-center">
+            3-5 Parent Guide
+            <span class="ml-2 text-xl">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-arrow-down-to-line-icon lucide-arrow-down-to-line">
+                <path d="M12 17V3" />
+                <path d="m6 11 6 6 6-6" />
+                <path d="M19 21H5" />
+              </svg>
+            </span>
+          </a>
+
+          <a id="guide-6-8" href="./files/6-8-guide.pdf" download
+            class="bg-yellow-400 hover:bg-yellow-500 transition text-white font-bold py-3 px-4 rounded-md flex justify-between items-center">
+            6-8 Parent Guide
+            <span class="ml-2 text-xl">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-arrow-down-to-line-icon lucide-arrow-down-to-line">
+                <path d="M12 17V3" />
+                <path d="m6 11 6 6 6-6" />
+                <path d="M19 21H5" />
+              </svg>
+            </span>
+          </a>
+
+          <a id="guide-9-12" href="./files/9-12-guide.pdf" download
+            class="bg-yellow-400 hover:bg-yellow-500 transition text-white font-bold py-3 px-4 rounded-md flex justify-between items-center">
+            9-12 Parent Guide
+            <span class="ml-2 text-xl">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-arrow-down-to-line-icon lucide-arrow-down-to-line">
+                <path d="M12 17V3" />
+                <path d="m6 11 6 6 6-6" />
+                <path d="M19 21H5" />
+              </svg>
+            </span>
+          </a>
+        </div>
+      </div>
+
+    </div>
   </div>
 
-  <!-- Nav Links -->
-  <ul class="flex flex-wrap justify-center gap-6 mt-4 text-sm">
-    <li><a href="#" class="hover:underline">Home</a></li>
-    <li><a href="#" class="hover:underline">Reading List</a></li>
-    <li><a href="#" class="hover:underline">Real Stories</a></li>
-    <li><a href="#" class="hover:underline">Resiliency Coaches</a></li>
-    <li><a href="#" class="hover:underline">Additional Resources</a></li>
-    <li><a href="#" class="hover:underline">Contact</a></li>
-  </ul>
 
-  <!-- Copyright -->
-  <p class="text-xs mt-4 text-[#00CCD2]">&copy; 2025 Resiliency Florida <br>| Privacy Policy | Accessibility Statement</p>
-</footer>
-
-
-  <!-- Script -->
   <script>
     const profileCards = document.querySelectorAll('.profile-card');
     const storySection = document.getElementById('story-section');
 
-    // Elements inside the story section
     const storyImage = document.getElementById('story-image');
     const storyName = document.getElementById('story-name');
     const storyTitle = document.getElementById('story-title');
@@ -270,8 +356,8 @@
     const videoBox = document.getElementById('video-box');
     const storyText = document.getElementById('story-text');
     const storyIcons = document.getElementById('story-icons');
+    const profileIcons = document.getElementById('profile-icons');
 
-    // Data
     const profilesData = {
       arianna: {
         image: "https://static.wixstatic.com/media/ec3230_37e5ce1358844241afafe62702e75a5b~mv2.jpg/v1/fill/w_918,h_448,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/6a0efb45-0313-442e-92ed-f8981b6e5220-FSU.jpg",
@@ -301,49 +387,142 @@
     };
 
     profileCards.forEach(card => {
-      card.addEventListener('click', () => {
-        const personKey = card.getAttribute('data-person');
-        const profile = profilesData[personKey];
+      const imageContainer = card.querySelector('.imageContainer');
+      if (imageContainer) {
+        imageContainer.addEventListener('click', (event) => {
+          event.stopPropagation();
 
-        if (profile) {
-          // Show section and sub-sections
-          storySection.classList.remove('hidden');
-          storyImage.classList.remove('hidden');
-          storyText.classList.remove('hidden');
-          videoBox.classList.remove('hidden');
+          const personKey = card.getAttribute('data-person');
+          const profile = profilesData[personKey];
 
-          // Fill content
-          storyImage.src = profile.image;
-          storyImage.alt = `${profile.name} image`;
-          storyName.textContent = profile.name;
-          storyTitle.textContent = profile.title;
-          storyDescription.innerHTML = profile.description;
-          storyVideo.src = profile.video;
-          videoTitle.innerHTML = `WATCH <br><span class="font-black text-3xl">${profile.name.split(' ')[0]}'s Story</span>`;
+          if (profile) {
+            storySection.classList.remove('hidden');
+            storyImage.classList.remove('hidden');
+            storyText.classList.remove('hidden');
+            videoBox.classList.remove('hidden');
 
-          // Update icons
-          storyIcons.innerHTML = ""; // clear previous
-          profile.icons.forEach(iconUrl => {
-            const img = document.createElement("img");
-            img.src = iconUrl;
-            img.alt = "Skill Icon";
-            img.className = "h-14 w-14";
-            storyIcons.appendChild(img);
-          });
+            storyImage.src = profile.image;
+            storyImage.alt = `${profile.name} image`;
+            storyName.textContent = profile.name;
+            storyTitle.textContent = profile.title;
+            storyDescription.innerHTML = profile.description;
+            storyVideo.src = profile.video;
+            videoTitle.innerHTML = `WATCH <br><span class="font-black text-3xl">${profile.name.split(' ')[0]}'s Story</span>`;
 
-          // Smooth scroll
-          storySection.scrollIntoView({ behavior: "smooth" });
-        }
-      });
+            storyIcons.innerHTML = "";
+
+            profile.icons.forEach(iconUrl => {
+              const img = document.createElement("img");
+              img.src = iconUrl;
+              img.alt = "Resiliency Skill";
+              img.className = "h-14 w-14 cursor-pointer";
+
+              // Match the icon URL to the modalData keys
+              const modalKey = Object.keys(modalData).find(key => modalData[key].img === iconUrl);
+              if (modalKey) {
+                img.setAttribute("data-modal-key", modalKey);
+              }
+
+              storyIcons.appendChild(img);
+            });
+
+            storySection.scrollIntoView({ behavior: "smooth" });
+          }
+        });
+      }
     });
-    // Toggle mobile menu
+
+    // MOBILE MENU
     const menuBtn = document.getElementById("menu-btn");
     const mobileMenu = document.getElementById("mobile-menu");
 
     menuBtn.addEventListener("click", () => {
       mobileMenu.classList.toggle("hidden");
     });
+
+
+    // modal logic for icons
+    const iconModal = document.getElementById("icon-modal");
+    const modalIconImg = document.getElementById("modal-icon-img");
+    const modalIconTitle = document.getElementById("modal-icon-title");
+    const modalIconDesc = document.getElementById("modal-icon-desc");
+    const closeModal = document.getElementById("close-modal");
+
+    // Example content data for different icons
+    const modalData = {
+      "Perseverance": {
+        title: "Perseverance",
+        desc: "Continuing to try even when things are hard.",
+        img: "https://static.wixstatic.com/media/ec3230_2236b60bcf35436a97fd4579b3d1dbd7~mv2.png/v1/fill/w_110,h_110,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Skill_Perseverance.png"
+      },
+      "Grit": {
+        title: "Grit",
+        desc: "Working consistently toward my long-term goals.",
+        img: "https://static.wixstatic.com/media/ec3230_b95fb1e80f81427ebf22837bfeabc001~mv2.png/v1/fill/w_108,h_108,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Skill_Grit.png"
+      }
+      ,
+      "Empathy": {
+        title: "Empathy",
+        desc: "Understanding others' thoughts, feelings and actions.",
+        img: "https://static.wixstatic.com/media/ec3230_0f3736c65b6548598250e9f4927313a4~mv2.png/v1/fill/w_108,h_108,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Skill_Empathy.png"
+      }
+      ,
+      "Responsibility": {
+        title: "Responsibility",
+        desc: "Owning my actions, using good judgment and practicing self-control.",
+        img: "https://static.wixstatic.com/media/ec3230_fea834e7361042dd848ae3ae73955864~mv2.png/v1/fill/w_110,h_110,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Skill_Responsibility.png"
+      }
+      ,
+      "Self-Awareness & Self-Management": {
+        title: "Self-Awareness & Self-Management",
+        desc: "Understanding and governing our thoughts, actions and impact on others.",
+        img: "https://static.wixstatic.com/media/ec3230_fe408358363b49b0a11bd86c7e17fd31~mv2.png/v1/fill/w_108,h_108,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Skill_Self%20Awareness.png"
+      },
+      "Perseverance": {
+        title: "Perseverance",
+        desc: "Continuing to try even when things are hard.",
+        img: "https://static.wixstatic.com/media/ec3230_2236b60bcf35436a97fd4579b3d1dbd7~mv2.png/v1/fill/w_110,h_110,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Skill_Perseverance.png"
+      }
+
+      // Add more icons here...
+    };
+
+    document.body.addEventListener('click', function (e) {
+      const target = e.target;
+
+      if (target.tagName === 'IMG' && target.dataset.modalKey) {
+        const key = target.dataset.modalKey;
+        const data = modalData[key];
+
+        if (data) {
+          modalIconImg.src = data.img;
+          modalIconTitle.textContent = data.title;
+          modalIconDesc.textContent = data.desc;
+          iconModal.classList.remove('hidden');
+        }
+      }
+    });
+
+    closeModal.addEventListener('click', () => {
+      iconModal.classList.add('hidden');
+    });
+
+    iconModal.addEventListener('click', (e) => {
+      if (e.target === iconModal) {
+        iconModal.classList.add('hidden');
+      }
+    });
+
+
+
+
+
+
+
+
+
   </script>
+
 
 
 </body>
