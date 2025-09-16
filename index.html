@@ -27,65 +27,86 @@
 <body class="text-gray-900">
 
     <!-- Navbar -->
-    <header class="bg-white shadow-md relative">
-        <nav class="max-w-7xl mx-auto flex items-end justify-between px-0 md:px-12 sm:px-14">
+   <header class="bg-white shadow-md relative">
+  <nav class="max-w-7xl mx-auto flex items-end justify-between px-0 md:px-12 sm:px-14">
 
-            <!-- Logo (overlapping effect) -->
-            <div class="relative -mb-12">
-                <img src="https://static.wixstatic.com/media/ec3230_da5f8407ca0e4ba180e081362ce02808~mv2.png/v1/fill/w_518,h_398,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/ec3230_da5f8407ca0e4ba180e081362ce02808~mv2.png"
-                    alt="logo" class="h-32 md:h-44 object-contain" />
-            </div>
+    <!-- Logo (overlapping effect) -->
+    <div class="relative -mb-12">
+      <img src="https://static.wixstatic.com/media/ec3230_da5f8407ca0e4ba180e081362ce02808~mv2.png/v1/fill/w_518,h_398,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/ec3230_da5f8407ca0e4ba180e081362ce02808~mv2.png"
+        alt="logo" class="h-32 md:h-44 object-contain" />
+    </div>
 
-            <!-- Desktop Menu -->
-            <div class="hidden md:flex gap-8 pb-6">
-                <a href="index.html" class="text-yellow-500 font-black text-[1vw] md:text[2vw] ">Home</a>
-                <a href="readinglist.html"
-                    class="text-blue-900 hover:text-yellow-500 font-black text-[1vw] md:text[2vw] ">Reading
-                    List</a>
-                <a href="realstories.html"
-                    class="text-blue-900 hover:text-yellow-500 font-black text-[1vw] md:text[2vw] ">Real
-                    Stories</a>
-                <a href="resiliency-coaches.html"
-                    class="text-blue-900 hover:text-yellow-500 font-black text-[1vw] md:text[2vw] ">Resiliency
-                    Coaches</a>
-                <a href="teacher-resources.html"
-                    class="text-blue-900 hover:text-yellow-500 font-black text-[1vw] md:text[2vw] ">Teacher
-                    Resources</a>
-                <a href="additionalresources.html"
-                    class="text-blue-900 hover:text-yellow-500 font-black text-[1vw] md:text[2vw] ">Additional
-                    Resources</a>
-            </div>
+    <!-- Desktop Menu -->
+    <div class="hidden md:flex gap-8 pb-6 relative items-center">
+      <a href="index.html" class="nav-link text-yellow-500 font-black text-[1vw] md:text[2vw]">Home</a>
+      <a href="readinglist.html"
+        class="nav-link text-blue-900 hover:text-yellow-500 font-black text-[1vw] md:text[2vw]">Reading List</a>
+      <a href="realstories.html"
+        class="nav-link text-blue-900 hover:text-yellow-500 font-black text-[1vw] md:text[2vw]">Real Stories</a>
+      <a href="resiliency-coaches.html"
+        class="nav-link text-blue-900 hover:text-yellow-500 font-black text-[1vw] md:text[2vw]">Resiliency Coaches</a>
+      <a href="teacher-resources.html"
+        class="nav-link text-blue-900 hover:text-yellow-500 font-black text-[1vw] md:text[2vw]">Teacher Resources</a>
 
-            <!-- Mobile Hamburger -->
-            <div class="md:hidden pb-4">
-                <button id="menu-btn" class="text-blue-900 focus:outline-none">
-                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M4 6h16M4 12h16M4 18h16" />
-                    </svg>
-                </button>
-            </div>
-        </nav>
-
-        <!-- Mobile Menu Dropdown -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white border-t shadow-md">
-            <div class="flex flex-col items-center gap-4 py-14">
-                <a href="index.html" class="text-yellow-500 font-bold text-sm">Home</a>
-                <a href="readinglist.html" class="text-blue-900 hover:text-yellow-500 font-bold text-sm">Reading
-                    List</a>
-                <a href="realstories.html" class="text-blue-900 hover:text-yellow-500 font-bold text-sm">Real
-                    Stories</a>
-                <a href="resiliency-coaches.html"
-                    class="text-blue-900 hover:text-yellow-500 font-bold text-sm">Resiliency
-                    Coaches</a>
-                <a href="teacher-resources.html" class="text-blue-900 hover:text-yellow-500 font-bold text-sm">Teacher
-                    Resources</a>
-                <a href="additionalresources.html"
-                    class="text-blue-900 hover:text-yellow-500 font-bold text-sm">Additional
-                    Resources</a>
-            </div>
+      <!-- Additional Resources Dropdown (Desktop) -->
+      <div class="relative">
+        <button id="desktop-dropdown-toggle"
+          class="text-blue-900 hover:text-yellow-500 font-black text-[1vw] md:text-[2vw] flex items-center gap-1 focus:outline-none">
+          <a href="additionalresources.html"
+            class="nav-link text-blue-900 hover:text-yellow-500 font-black text-sm">
+            Additional Resources
+          </a>
+          <svg class="w-3 h-3 mt-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        <div id="desktop-dropdown-menu"
+          class="hidden absolute bg-white shadow-lg mt-2 rounded z-50 min-w-[200px]">
+          <a href="parent-resources.html"
+            class="nav-link block px-4 py-2 text-sm text-blue-900 hover:bg-yellow-100 hover:text-yellow-600">Parent
+            Resource</a>
         </div>
-    </header>
+      </div>
+    </div>
+
+    <!-- Mobile Hamburger -->
+    <div class="md:hidden pb-4">
+      <button id="menu-btn" class="text-blue-900 focus:outline-none">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu Dropdown -->
+  <div id="mobile-menu" class="hidden md:hidden bg-white border-t shadow-md">
+    <div class="flex flex-col items-center gap-4 py-14">
+      <a href="index.html" class="nav-link text-yellow-500 font-bold text-sm">Home</a>
+      <a href="readinglist.html" class="nav-link text-blue-900 hover:text-yellow-500 font-bold text-sm">Reading List</a>
+      <a href="realstories.html" class="nav-link text-blue-900 hover:text-yellow-500 font-bold text-sm">Real Stories</a>
+      <a href="resiliency-coaches.html"
+        class="nav-link text-blue-900 hover:text-yellow-500 font-bold text-sm">Resiliency Coaches</a>
+      <a href="teacher-resources.html"
+        class="nav-link text-blue-900 hover:text-yellow-500 font-bold text-sm">Teacher Resources</a>
+
+      <!-- Additional Resources Dropdown (Mobile) -->
+      <div class="w-full text-center">
+        <button id="dropdown-toggle" class="text-blue-900 hover:text-yellow-500 font-bold text-sm w-full">
+          <a href="additionalresources.html"
+            class="nav-link text-blue-900 hover:text-yellow-500 font-bold text-sm">
+            Additional Resources ▼
+          </a>
+        </button>
+
+        <div id="dropdown-menu" class="hidden mt-2 space-y-2">
+          <a href="parent-resources.html"
+            class="nav-link block text-blue-900 hover:text-yellow-500 font-bold text-sm">Parent-Resources</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
 
 
 
@@ -517,13 +538,13 @@
         </div>
 
         <!-- Nav Links -->
-        <ul class="flex flex-wrap justify-center gap-6 mt-4 text-sm">
-            <li><a href="#" class="hover:underline">Home</a></li>
-            <li><a href="#" class="hover:underline">Reading List</a></li>
-            <li><a href="#" class="hover:underline">Real Stories</a></li>
-            <li><a href="#" class="hover:underline">Resiliency Coaches</a></li>
-            <li><a href="#" class="hover:underline">Additional Resources</a></li>
-            <li><a href="#" class="hover:underline">Contact</a></li>
+        <ul class="flex flex-wrap justify-center gap-6 mt-4 text-white text-sm">
+            <li><a href="index.html" class=" hover:underline">Home</a></li>
+            <li><a href="readinglist.html" class="hover:underline">Reading List</a></li>
+            <li><a href="realstories.html" class="hover:underline">Real Stories</a></li>
+            <li><a href="resiliency-coaches.html" class="hover:underline">Resiliency Coaches</a></li>
+            <li><a href="additionalresources.html" class="hover:underline">Additional Resources</a></li>
+            <li><a href="index.html" class="hover:underline">Contact</a></li>
         </ul>
 
         <!-- Copyright -->
@@ -623,6 +644,7 @@
         </div>
     </div>
 
+    <script src="nav.js"></script>
 
     <script>
         // Modal data for each skill
@@ -643,7 +665,7 @@
                 ]
             },
             "Grit": {
-                title: "Grit", 
+                title: "Grit",
                 subtitle: "Working consistently toward my long-term goals.",
                 icon: "https://static.wixstatic.com/media/ec3230_b95fb1e80f81427ebf22837bfeabc001~mv2.png/v1/fill/w_108,h_108,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Skill_Grit.png",
                 readingGuides: [
@@ -827,9 +849,9 @@
             modalIcon.alt = data.title;
             modalTitle.textContent = data.title;
             modalSubtitle.textContent = data.subtitle;
-            
+
             populateReadingGuides(data.readingGuides);
-            
+
             modal.classList.remove('hidden');
             document.body.style.overflow = 'hidden'; // Prevent background scrolling
         }
@@ -842,7 +864,7 @@
 
         // Event listeners for cards
         document.querySelectorAll('[data-skill]').forEach(card => {
-            card.addEventListener('click', function() {
+            card.addEventListener('click', function () {
                 const skillName = this.dataset.skill;
                 openModal(skillName);
             });
@@ -852,14 +874,14 @@
         closeModalBtn.addEventListener('click', closeModal);
 
         // Event listener for clicking outside modal
-        modal.addEventListener('click', function(e) {
+        modal.addEventListener('click', function (e) {
             if (e.target === modal) {
                 closeModal();
             }
         });
 
         // Event listener for ESC key
-        document.addEventListener('keydown', function(e) {
+        document.addEventListener('keydown', function (e) {
             if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
                 closeModal();
             }
