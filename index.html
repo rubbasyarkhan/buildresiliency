@@ -27,86 +27,94 @@
 <body class="text-gray-900">
 
     <!-- Navbar -->
-   <header class="bg-white shadow-md relative">
-  <nav class="max-w-7xl mx-auto flex items-end justify-between px-0 md:px-12 sm:px-14">
+    <header class="bg-white shadow-md relative">
+        <nav class="max-w-7xl mx-auto flex items-end justify-between px-0 md:px-12 sm:px-14">
 
-    <!-- Logo (overlapping effect) -->
-    <div class="relative -mb-12">
-      <img src="https://static.wixstatic.com/media/ec3230_da5f8407ca0e4ba180e081362ce02808~mv2.png/v1/fill/w_518,h_398,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/ec3230_da5f8407ca0e4ba180e081362ce02808~mv2.png"
-        alt="logo" class="h-32 md:h-44 object-contain" />
-    </div>
+            <!-- Logo (overlapping effect) -->
+            <div class="relative -mb-12">
+                <img src="https://static.wixstatic.com/media/ec3230_da5f8407ca0e4ba180e081362ce02808~mv2.png/v1/fill/w_518,h_398,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/ec3230_da5f8407ca0e4ba180e081362ce02808~mv2.png"
+                    alt="logo" class="h-32 md:h-44 object-contain" />
+            </div>
 
-    <!-- Desktop Menu -->
-    <div class="hidden md:flex gap-8 pb-6 relative items-center">
-      <a href="index.html" class="nav-link text-yellow-500 font-black text-[1vw] md:text[2vw]">Home</a>
-      <a href="readinglist.html"
-        class="nav-link text-blue-900 hover:text-yellow-500 font-black text-[1vw] md:text[2vw]">Reading List</a>
-      <a href="realstories.html"
-        class="nav-link text-blue-900 hover:text-yellow-500 font-black text-[1vw] md:text[2vw]">Real Stories</a>
-      <a href="resiliency-coaches.html"
-        class="nav-link text-blue-900 hover:text-yellow-500 font-black text-[1vw] md:text[2vw]">Resiliency Coaches</a>
-      <a href="teacher-resources.html"
-        class="nav-link text-blue-900 hover:text-yellow-500 font-black text-[1vw] md:text[2vw]">Teacher Resources</a>
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex gap-8 pb-6 relative items-center">
+                <a href="index.html" class="nav-link text-yellow-500 font-black text-[1vw] md:text[2vw]">Home</a>
+                <a href="readinglist.html"
+                    class="nav-link text-blue-900 hover:text-yellow-500 font-black text-[1vw] md:text[2vw]">Reading
+                    List</a>
+                <a href="realstories.html"
+                    class="nav-link text-blue-900 hover:text-yellow-500 font-black text-[1vw] md:text[2vw]">Real
+                    Stories</a>
+                <a href="resiliency-coaches.html"
+                    class="nav-link text-blue-900 hover:text-yellow-500 font-black text-[1vw] md:text[2vw]">Resiliency
+                    Coaches</a>
+                <a href="teacher-resources.html"
+                    class="nav-link text-blue-900 hover:text-yellow-500 font-black text-[1vw] md:text[2vw]">Teacher
+                    Resources</a>
 
-      <!-- Additional Resources Dropdown (Desktop) -->
-      <div class="relative">
-        <button id="desktop-dropdown-toggle"
-          class="text-blue-900 hover:text-yellow-500 font-black text-[1vw] md:text-[2vw] flex items-center gap-1 focus:outline-none">
-          <a href="additionalresources.html"
-            class="nav-link text-blue-900 hover:text-yellow-500 font-black text-sm">
-            Additional Resources
-          </a>
-          <svg class="w-3 h-3 mt-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-          </svg>
-        </button>
-        <div id="desktop-dropdown-menu"
-          class="hidden absolute bg-white shadow-lg mt-2 rounded z-50 min-w-[200px]">
-          <a href="parent-resources.html"
-            class="nav-link block px-4 py-2 text-sm text-blue-900 hover:bg-yellow-100 hover:text-yellow-600">Parent
-            Resource</a>
+                <!-- Additional Resources Dropdown (Desktop) -->
+                <div class="relative">
+                    <button id="desktop-dropdown-toggle"
+                        class="text-blue-900 hover:text-yellow-500 font-black text-[1vw] md:text-[2vw] flex items-center gap-1 focus:outline-none">
+                        <a href="additionalresources.html"
+                            class="nav-link text-blue-900 hover:text-yellow-500 font-black text-sm">
+                            Additional Resources
+                        </a>
+                        <svg class="w-3 h-3 mt-1" fill="none" stroke="currentColor" stroke-width="2"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div id="desktop-dropdown-menu"
+                        class="hidden absolute bg-white shadow-lg mt-2 rounded z-50 min-w-[200px]">
+                        <a href="parent-resources.html"
+                            class="nav-link block px-4 py-2 text-sm text-blue-900 hover:bg-yellow-100 hover:text-yellow-600">Parent
+                            Resource</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile Hamburger -->
+            <div class="md:hidden pb-4">
+                <button id="menu-btn" class="text-blue-900 focus:outline-none">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t shadow-md">
+            <div class="flex flex-col items-center gap-4 py-14">
+                <a href="index.html" class="nav-link text-yellow-500 font-bold text-sm">Home</a>
+                <a href="readinglist.html"
+                    class="nav-link text-blue-900 hover:text-yellow-500 font-bold text-sm">Reading List</a>
+                <a href="realstories.html" class="nav-link text-blue-900 hover:text-yellow-500 font-bold text-sm">Real
+                    Stories</a>
+                <a href="resiliency-coaches.html"
+                    class="nav-link text-blue-900 hover:text-yellow-500 font-bold text-sm">Resiliency Coaches</a>
+                <a href="teacher-resources.html"
+                    class="nav-link text-blue-900 hover:text-yellow-500 font-bold text-sm">Teacher Resources</a>
+
+                <!-- Additional Resources Dropdown (Mobile) -->
+                <div class="w-full text-center">
+                    <button id="dropdown-toggle" class="text-blue-900 hover:text-yellow-500 font-bold text-sm w-full">
+                        <a href="additionalresources.html"
+                            class="nav-link text-blue-900 hover:text-yellow-500 font-bold text-sm">
+                            Additional Resources ▼
+                        </a>
+                    </button>
+
+                    <div id="dropdown-menu" class="hidden mt-2 space-y-2">
+                        <a href="parent-resources.html"
+                            class="nav-link block text-blue-900 hover:text-yellow-500 font-bold text-sm">Parent-Resources</a>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-
-    <!-- Mobile Hamburger -->
-    <div class="md:hidden pb-4">
-      <button id="menu-btn" class="text-blue-900 focus:outline-none">
-        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-        </svg>
-      </button>
-    </div>
-  </nav>
-
-  <!-- Mobile Menu Dropdown -->
-  <div id="mobile-menu" class="hidden md:hidden bg-white border-t shadow-md">
-    <div class="flex flex-col items-center gap-4 py-14">
-      <a href="index.html" class="nav-link text-yellow-500 font-bold text-sm">Home</a>
-      <a href="readinglist.html" class="nav-link text-blue-900 hover:text-yellow-500 font-bold text-sm">Reading List</a>
-      <a href="realstories.html" class="nav-link text-blue-900 hover:text-yellow-500 font-bold text-sm">Real Stories</a>
-      <a href="resiliency-coaches.html"
-        class="nav-link text-blue-900 hover:text-yellow-500 font-bold text-sm">Resiliency Coaches</a>
-      <a href="teacher-resources.html"
-        class="nav-link text-blue-900 hover:text-yellow-500 font-bold text-sm">Teacher Resources</a>
-
-      <!-- Additional Resources Dropdown (Mobile) -->
-      <div class="w-full text-center">
-        <button id="dropdown-toggle" class="text-blue-900 hover:text-yellow-500 font-bold text-sm w-full">
-          <a href="additionalresources.html"
-            class="nav-link text-blue-900 hover:text-yellow-500 font-bold text-sm">
-            Additional Resources ▼
-          </a>
-        </button>
-
-        <div id="dropdown-menu" class="hidden mt-2 space-y-2">
-          <a href="parent-resources.html"
-            class="nav-link block text-blue-900 hover:text-yellow-500 font-bold text-sm">Parent-Resources</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</header>
+    </header>
 
 
 
@@ -161,41 +169,38 @@
 
                 <div class="w-[80%] mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-3 justify-items-center">
 
-                    <!-- Perseverance Card -->
-                    <section class="">
+                    <section>
                         <div class="group relative w-48 h-56 cursor-pointer" data-skill="Perseverance">
                             <div
                                 class="absolute inset-0 bg-white flex flex-col items-center justify-center transition-opacity duration-300 group-hover:opacity-0 rounded-lg shadow-lg">
-                                <img src="https://static.wixstatic.com/media/ec3230_2236b60bcf35436a97fd4579b3d1dbd7~mv2.png/v1/fill/w_119,h_126,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Skill_Perseverance.png"
+                                <img src="https://static.wixstatic.com/media/ec3230_2236b60bcf35436a97fd4579b3d1dbd7~mv2.png"
                                     alt="Perseverance" class="w-28 h-28 mb-4">
                                 <p class="text-[#00196E] font-extrabold">Perseverance</p>
                             </div>
-                            <img src="https://static.wixstatic.com/media/ec3230_83ca2eb51beb414983760db22e1f8335~mv2.png/v1/fill/w_187,h_187,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Persev%20-%20Box.png"
+                            <img src="https://static.wixstatic.com/media/ec3230_83ca2eb51beb414983760db22e1f8335~mv2.png"
                                 alt="" class="rounded-lg">
                         </div>
                     </section>
 
-                    <!-- Grit Card -->
-                    <section class="">
-                        <div class="group relative w-48 h-56 cursor-pointer" data-skill="Grit">
+                    <section>
+                        <div class="group relative w-48 h-56 cursor-pointer" data-skill="Grid">
                             <div
                                 class="absolute inset-0 bg-white flex flex-col items-center justify-center transition-opacity duration-300 group-hover:opacity-0 rounded-lg shadow-lg">
                                 <img src="https://static.wixstatic.com/media/ec3230_b95fb1e80f81427ebf22837bfeabc001~mv2.png/v1/crop/x_45,y_0,w_1516,h_1605/fill/w_119,h_126,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Skill_Grit.png"
-                                    alt="Grit" class="w-28 h-28 mb-4">
-                                <p class="text-[#00196E] font-extrabold">Grit</p>
+                                    alt="Perseverance" class="w-28 h-28 mb-4">
+                                <p class="text-[#00196E] font-extrabold">Grid</p>
                             </div>
                             <img src="https://static.wixstatic.com/media/ec3230_3281bc20d1454ea4b65e6ba765c9ee00~mv2.png/v1/fill/w_187,h_187,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Skill_Grit%20-%20Box.png"
                                 alt="" class="rounded-lg">
                         </div>
                     </section>
 
-                    <!-- Gratitude Card -->
-                    <section class="">
+                    <section>
                         <div class="group relative w-48 h-56 cursor-pointer" data-skill="Gratitude">
                             <div
                                 class="absolute inset-0 bg-white flex flex-col items-center justify-center transition-opacity duration-300 group-hover:opacity-0 rounded-lg shadow-lg">
                                 <img src="https://static.wixstatic.com/media/ec3230_5cca51678f084110abd9c67c98de9c14~mv2.png/v1/crop/x_45,y_0,w_1516,h_1605/fill/w_119,h_126,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Skill_Gratitude.png"
-                                    alt="Gratitude" class="w-28 h-28 mb-4">
+                                    alt="Perseverance" class="w-28 h-28 mb-4">
                                 <p class="text-[#00196E] font-extrabold">Gratitude</p>
                             </div>
                             <img src="https://static.wixstatic.com/media/ec3230_f93058d1a55843ea8f08c4a4562c28a7~mv2.png/v1/fill/w_187,h_187,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Skill_Gratitude%20-%20Box.png"
@@ -203,13 +208,13 @@
                         </div>
                     </section>
 
-                    <!-- Responsibility Card -->
-                    <section class="">
+
+                    <section>
                         <div class="group relative w-48 h-56 cursor-pointer" data-skill="Responsibility">
                             <div
                                 class="absolute inset-0 bg-white flex flex-col items-center justify-center transition-opacity duration-300 group-hover:opacity-0 rounded-lg shadow-lg">
                                 <img src="https://static.wixstatic.com/media/ec3230_fea834e7361042dd848ae3ae73955864~mv2.png/v1/crop/x_45,y_0,w_1516,h_1605/fill/w_119,h_126,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Skill_Responsibility.png"
-                                    alt="Responsibility" class="w-28 h-28 mb-4">
+                                    alt="Perseverance" class="w-28 h-28 mb-4">
                                 <p class="text-[#00196E] font-extrabold">Responsibility</p>
                             </div>
                             <img src="https://static.wixstatic.com/media/ec3230_b09701554f3745619c4966fb8b3d53f2~mv2.jpg/v1/fill/w_187,h_187,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Skill_Responsib%20-%20Box.jpg"
@@ -217,58 +222,56 @@
                         </div>
                     </section>
 
-                    <!-- Responsible Decision Making Card -->
-                    <section class="">
-                        <div class="group relative w-48 h-56 cursor-pointer" data-skill="Responsible Decision Making">
+
+                    <section>
+                        <div class="group relative w-48 h-56 cursor-pointer" data-skill="Responsible Decision-Making">
                             <div
                                 class="absolute inset-0 bg-white flex flex-col items-center justify-center transition-opacity duration-300 group-hover:opacity-0 rounded-lg shadow-lg">
                                 <img src="https://static.wixstatic.com/media/ec3230_73c9da94861740c7bc840b8f5124be1f~mv2.png/v1/crop/x_45,y_0,w_1516,h_1605/fill/w_119,h_126,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Skill_Responsible%20Decision%20Making.png"
-                                    alt="Responsible Decision Making" class="w-28 h-28 mb-4">
-                                <p class="text-[#00196E] font-extrabold text-center text-sm">Responsible Decision Making
-                                </p>
+                                    alt="Perseverance" class="w-28 h-28 mb-4">
+                                <p class="text-[#00196E] font-extrabold">Responsible Decision-Making</p>
                             </div>
                             <img src="https://static.wixstatic.com/media/ec3230_fff4bfb25ed24323b5dd70dc953996ed~mv2.png/v1/fill/w_187,h_187,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Skill_Res%20DM%20-%20Box_Res%20DM%20-%20Box.png"
                                 alt="" class="rounded-lg">
                         </div>
                     </section>
 
-                    <!-- Critical Thinking Card -->
-                    <section class="">
-                        <div class="group relative w-48 h-56 cursor-pointer" data-skill="Critical Thinking">
+                    <section>
+                        <div class="group relative w-48 h-56 cursor-pointer"
+                            data-skill="Critical Thinking & Problem Solving">
                             <div
                                 class="absolute inset-0 bg-white flex flex-col items-center justify-center transition-opacity duration-300 group-hover:opacity-0 rounded-lg shadow-lg">
                                 <img src="https://static.wixstatic.com/media/ec3230_1a38780058a44281bc6b893d1260e2bf~mv2.png/v1/crop/x_45,y_0,w_1516,h_1605/fill/w_119,h_126,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Skill_Critical%20Thinking.png"
-                                    alt="Critical Thinking" class="w-28 h-28 mb-4">
-                                <p class="text-[#00196E] font-extrabold">Critical Thinking</p>
+                                    alt="Perseverance" class="w-28 h-28 mb-4">
+                                <p class="text-[#00196E] font-extrabold">Critical Thinking & Problem Solving</p>
                             </div>
                             <img src="https://static.wixstatic.com/media/ec3230_a96c1eb2388c4aac8b376f70c36b7300~mv2.png/v1/fill/w_187,h_187,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Skill_CT%20-%20Box.png"
                                 alt="" class="rounded-lg">
                         </div>
                     </section>
 
-                    <!-- Self Awareness Card -->
-                    <section class="">
+
+                    <section>
                         <div class="group relative w-48 h-56 cursor-pointer"
                             data-skill="Self-Awareness & Self-Management">
                             <div
                                 class="absolute inset-0 bg-white flex flex-col items-center justify-center transition-opacity duration-300 group-hover:opacity-0 rounded-lg shadow-lg">
                                 <img src="https://static.wixstatic.com/media/ec3230_fe408358363b49b0a11bd86c7e17fd31~mv2.png/v1/crop/x_45,y_0,w_1516,h_1605/fill/w_119,h_126,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Skill_Self%20Awareness.png"
-                                    alt="Self Awareness" class="w-28 h-28 mb-4">
-                                <p class="text-[#00196E] font-extrabold text-center text-sm">Self-Awareness &
-                                    Self-Management</p>
+                                    alt="Perseverance" class="w-28 h-28 mb-4">
+                                <p class="text-[#00196E] font-extrabold">Self-Awareness & Self-Management</p>
                             </div>
                             <img src="https://static.wixstatic.com/media/ec3230_77f2b3dbfabd452bbcecc8b71e2bc664~mv2.png/v1/fill/w_187,h_187,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Skill__SA%20SM%20-%20Box.png"
                                 alt="" class="rounded-lg">
                         </div>
                     </section>
 
-                    <!-- Mentorship Card -->
-                    <section class="">
+
+                    <section>
                         <div class="group relative w-48 h-56 cursor-pointer" data-skill="Mentorship">
                             <div
                                 class="absolute inset-0 bg-white flex flex-col items-center justify-center transition-opacity duration-300 group-hover:opacity-0 rounded-lg shadow-lg">
                                 <img src="https://static.wixstatic.com/media/ec3230_9ae7b78cbc0b4e7fabb1ef852c547db5~mv2.png/v1/crop/x_0,y_61,w_1605,h_1482/fill/w_131,h_121,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Skill_Mentorship.png"
-                                    alt="Mentorship" class="w-28 h-28 mb-4">
+                                    alt="Perseverance" class="w-28 h-28 mb-4">
                                 <p class="text-[#00196E] font-extrabold">Mentorship</p>
                             </div>
                             <img src="https://static.wixstatic.com/media/ec3230_91beaedc80e84c5a891433db4035ef95~mv2.png/v1/fill/w_187,h_187,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Skill_Mentorship.png"
@@ -276,13 +279,12 @@
                         </div>
                     </section>
 
-                    <!-- Citizenship Card -->
-                    <section class="">
+                    <section>
                         <div class="group relative w-48 h-56 cursor-pointer" data-skill="Citizenship">
                             <div
                                 class="absolute inset-0 bg-white flex flex-col items-center justify-center transition-opacity duration-300 group-hover:opacity-0 rounded-lg shadow-lg">
                                 <img src="https://static.wixstatic.com/media/ec3230_6209b264f7e34e32b72d6f4f0e3d1dc0~mv2.png/v1/crop/x_45,y_0,w_1516,h_1605/fill/w_119,h_126,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Skill_Citizenship.png"
-                                    alt="Citizenship" class="w-28 h-28 mb-4">
+                                    alt="Perseverance" class="w-28 h-28 mb-4">
                                 <p class="text-[#00196E] font-extrabold">Citizenship</p>
                             </div>
                             <img src="https://static.wixstatic.com/media/ec3230_266f0730eca4498886e0e0108b3c9938~mv2.png/v1/fill/w_187,h_187,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Skill__Citizenship%20-%20box.png"
@@ -290,27 +292,26 @@
                         </div>
                     </section>
 
-                    <!-- Honesty Card -->
-                    <section class="">
+
+                    <section>
                         <div class="group relative w-48 h-56 cursor-pointer" data-skill="Honesty">
                             <div
                                 class="absolute inset-0 bg-white flex flex-col items-center justify-center transition-opacity duration-300 group-hover:opacity-0 rounded-lg shadow-lg">
                                 <img src="https://static.wixstatic.com/media/ec3230_a2a36707aca54c078682a2209a54842b~mv2.png/v1/crop/x_45,y_0,w_1516,h_1605/fill/w_119,h_126,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Skill_Honesty.png"
-                                    alt="Honesty" class="w-28 h-28 mb-4">
-                                <p class="text-[#00196E] font-extrabold">Honesty</p>
+                                    alt="Perseverance" class="w-28 h-28 mb-4">
+                                <p class="text-[#00196E] font-extrabold">Citizenship</p>
                             </div>
                             <img src="https://static.wixstatic.com/media/ec3230_c864d125298a48598b3f12992c8bbdfc~mv2.png/v1/fill/w_187,h_187,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Skill__Honesty%20-%20Box.png"
                                 alt="" class="rounded-lg">
                         </div>
                     </section>
 
-                    <!-- Empathy Card -->
-                    <section class="">
+                    <section>
                         <div class="group relative w-48 h-56 cursor-pointer" data-skill="Empathy">
                             <div
                                 class="absolute inset-0 bg-white flex flex-col items-center justify-center transition-opacity duration-300 group-hover:opacity-0 rounded-lg shadow-lg">
                                 <img src="https://static.wixstatic.com/media/ec3230_0f3736c65b6548598250e9f4927313a4~mv2.png/v1/crop/x_45,y_0,w_1516,h_1605/fill/w_119,h_126,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Skill_Empathy.png"
-                                    alt="Empathy" class="w-28 h-28 mb-4">
+                                    alt="Perseverance" class="w-28 h-28 mb-4">
                                 <p class="text-[#00196E] font-extrabold">Empathy</p>
                             </div>
                             <img src="https://static.wixstatic.com/media/ec3230_b6bfcdc933964dd19b850f0577d8a07a~mv2.png/v1/fill/w_187,h_187,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Skill_Empathy%20--%20Box_Empathy%20--%20Box.png"
@@ -324,12 +325,11 @@
                 <div id="skill-modal"
                     class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
                     <div class="bg-white rounded-xl shadow-2xl max-w-4xl w-full mx-4 max-h-[90vh] overflow-y-auto">
+
                         <!-- Modal Header -->
                         <div class="bg-gradient-to-r from-blue-600 to-purple-600 text-white p-6 rounded-t-xl relative">
                             <button id="close-modal"
-                                class="absolute top-4 right-4 text-white hover:text-gray-300 text-2xl font-bold">
-                                ×
-                            </button>
+                                class="absolute top-4 right-4 text-white hover:text-gray-300 text-2xl font-bold">×</button>
                             <div class="flex items-center space-x-4">
                                 <img id="modal-icon" src="" alt="" class="w-16 h-16 rounded-lg">
                                 <div>
@@ -341,75 +341,36 @@
 
                         <!-- Modal Content -->
                         <div class="p-6">
-                            <!-- Content sections similar to your reference image -->
                             <div class="grid md:grid-cols-2 gap-6">
 
                                 <!-- For Parents Section -->
                                 <div class="bg-cyan-100 rounded-lg p-4">
                                     <h3 class="text-lg font-bold text-gray-800 mb-3">For Parents</h3>
-                                    <div class="grid grid-cols-2 gap-2">
-                                        <button
-                                            class="bg-yellow-400 text-gray-800 px-3 py-2 rounded text-sm font-semibold hover:bg-yellow-500 transition-colors">
-                                            K-2 Parent Guide +
-                                        </button>
-                                        <button
-                                            class="bg-yellow-400 text-gray-800 px-3 py-2 rounded text-sm font-semibold hover:bg-yellow-500 transition-colors">
-                                            3-5 Parent Guide +
-                                        </button>
-                                        <button
-                                            class="bg-yellow-400 text-gray-800 px-3 py-2 rounded text-sm font-semibold hover:bg-yellow-500 transition-colors">
-                                            6-8 Parent Guide +
-                                        </button>
-                                        <button
-                                            class="bg-yellow-400 text-gray-800 px-3 py-2 rounded text-sm font-semibold hover:bg-yellow-500 transition-colors">
-                                            9-12 Parent Guide +
-                                        </button>
-                                    </div>
+                                    <div id="parents-content" class="grid grid-cols-2 gap-2"></div>
                                 </div>
 
                                 <!-- For Teachers Section -->
                                 <div class="bg-cyan-100 rounded-lg p-4">
                                     <h3 class="text-lg font-bold text-gray-800 mb-3">For Teachers</h3>
-                                    <div class="grid grid-cols-2 gap-2">
-                                        <button
-                                            class="bg-blue-600 text-white px-3 py-2 rounded text-sm font-semibold hover:bg-blue-700 transition-colors">
-                                            K-2 Teacher Guides ⬇
-                                        </button>
-                                        <button
-                                            class="bg-blue-600 text-white px-3 py-2 rounded text-sm font-semibold hover:bg-blue-700 transition-colors">
-                                            3-5 Teacher Guides ⬇
-                                        </button>
-                                        <button
-                                            class="bg-blue-600 text-white px-3 py-2 rounded text-sm font-semibold hover:bg-blue-700 transition-colors">
-                                            6-8 Teacher Guides ⬇
-                                        </button>
-                                        <button
-                                            class="bg-blue-600 text-white px-3 py-2 rounded text-sm font-semibold hover:bg-blue-700 transition-colors">
-                                            9-12 Teacher Guides ⬇
-                                        </button>
-                                    </div>
+                                    <div id="teachers-content" class="grid grid-cols-2 gap-2"></div>
                                 </div>
                             </div>
 
                             <!-- Reading Guides Section -->
                             <div class="mt-6 bg-cyan-100 rounded-lg p-4">
                                 <h3 class="text-lg font-bold text-gray-800 mb-3">Reading Guides</h3>
-                                <div id="reading-guides-content">
-                                    <!-- Dynamic content will be populated here -->
-                                </div>
+                                <div id="reading-guides-content"></div>
                             </div>
 
                             <!-- Additional Resources Section -->
                             <div class="mt-6 bg-cyan-100 rounded-lg p-4">
                                 <h3 class="text-lg font-bold text-gray-800 mb-3">Additional Resources</h3>
-                                <button
-                                    class="bg-blue-800 text-white px-6 py-3 rounded font-semibold hover:bg-blue-900 transition-colors w-full">
-                                    SKILL TOOLKIT ⬇
-                                </button>
+                                <div id="additional-resources-content"></div>
                             </div>
                         </div>
                     </div>
                 </div>
+
             </section>
 
     </div>
@@ -504,7 +465,7 @@
 
                 <!-- Form container -->
                 <div class="bg-yellow-200 rounded-2xl p-8 shadow-lg">
-                    <form class="space-y-6">
+                    <form id="emailForm" class="space-y-6">
                         <!-- Email input -->
                         <div class="text-left">
                             <label for="email" class="block text-blue-900 font-semibold mb-2">
@@ -512,15 +473,18 @@
                             </label>
                             <input type="email" id="email" name="email" required
                                 class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:border-transparent"
-                                placeholder="Enter your email address">
+                                placeholder="Enter your email address" />
                         </div>
 
                         <!-- Submit button -->
                         <button type="submit"
                             class="w-full bg-yellow-500 hover:bg-yellow-600 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:ring-offset-2">
-                            Submit
+                            Subscribe
                         </button>
                     </form>
+
+                    <!-- Response message -->
+                    <p id="responseMsg" class="mt-4 text-center text-blue-900 font-medium"></p>
                 </div>
             </div>
         </div>
@@ -553,342 +517,398 @@
         </p>
     </footer>
 
-    <!-- MODAL -->
-    <div id="icon-modal" class="fixed inset-0 z-50 hidden bg-blue-900 bg-opacity-50 flex items-center justify-center">
-        <div class="bg-white p-12 relative w-[800px] max-w-[95%] text-center rounded-lg shadow-2xl">
-            <!-- Close button -->
-            <button id="close-modal"
-                class="absolute top-6 right-6 text-yellow-500 text-4xl font-bold hover:text-yellow-600 transition">
-                &times;
-            </button>
-
-            <!-- Icon + Title -->
-            <div class="flex items-center justify-center mb-6">
-                <!-- Dynamic Icon -->
-                <div class="border-r-4 border-cyan-400  text-left">
-                    <img id="modal-icon-img" src="" alt="" class="w-20 h-20 " />
-                </div>
-                <!-- Divider + Dynamic Title -->
-                <div class="ml-4">
-                    <h2 id="modal-icon-title" class="text-3xl font-extrabold text-blue-900 leading-snug"></h2>
-                </div>
-            </div>
-
-            <!-- Dynamic Subtitle / Description -->
-            <p id="modal-icon-desc" class="text-blue-900 text-2xl font-bold mb-10 max-w-xl mx-auto leading-relaxed"></p>
-            <div>
-                <!-- Dynamic Buttons -->
-                <div class="grid grid-cols-2 gap-4 max-w-lg mx-auto">
-                    <a id="guide-k2" href="./files/k2-guide.pdf" download
-                        class="bg-yellow-400 hover:bg-yellow-500 transition text-white font-bold py-3 px-4 rounded-md flex justify-between items-center">
-                        K-2 Parent Guide
-                        <span class="ml-2 text-xl">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round"
-                                class="lucide lucide-arrow-down-to-line-icon lucide-arrow-down-to-line">
-                                <path d="M12 17V3" />
-                                <path d="m6 11 6 6 6-6" />
-                                <path d="M19 21H5" />
-                            </svg>
-                        </span>
-                    </a>
-
-                    <a id="guide-3-5" href="./files/3-5-guide.pdf" download
-                        class="bg-yellow-400 hover:bg-yellow-500 transition text-white font-bold py-3 px-4 rounded-md flex justify-between items-center">
-                        3-5 Parent Guide
-                        <span class="ml-2 text-xl">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round"
-                                class="lucide lucide-arrow-down-to-line-icon lucide-arrow-down-to-line">
-                                <path d="M12 17V3" />
-                                <path d="m6 11 6 6 6-6" />
-                                <path d="M19 21H5" />
-                            </svg>
-                        </span>
-                    </a>
-
-                    <a id="guide-6-8" href="./files/6-8-guide.pdf" download
-                        class="bg-yellow-400 hover:bg-yellow-500 transition text-white font-bold py-3 px-4 rounded-md flex justify-between items-center">
-                        6-8 Parent Guide
-                        <span class="ml-2 text-xl">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round"
-                                class="lucide lucide-arrow-down-to-line-icon lucide-arrow-down-to-line">
-                                <path d="M12 17V3" />
-                                <path d="m6 11 6 6 6-6" />
-                                <path d="M19 21H5" />
-                            </svg>
-                        </span>
-                    </a>
-
-                    <a id="guide-9-12" href="./files/9-12-guide.pdf" download
-                        class="bg-yellow-400 hover:bg-yellow-500 transition text-white font-bold py-3 px-4 rounded-md flex justify-between items-center">
-                        9-12 Parent Guide
-                        <span class="ml-2 text-xl">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round"
-                                class="lucide lucide-arrow-down-to-line-icon lucide-arrow-down-to-line">
-                                <path d="M12 17V3" />
-                                <path d="m6 11 6 6 6-6" />
-                                <path d="M19 21H5" />
-                            </svg>
-                        </span>
-                    </a>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
     <script src="nav.js"></script>
 
+
     <script>
-        // Modal data for each skill
+        // Example data structure (replace with your real data)
         const modalData = {
             "Perseverance": {
+                icon: "https://static.wixstatic.com/media/ec3230_2236b60bcf35436a97fd4579b3d1dbd7~mv2.png",
                 title: "Perseverance",
                 subtitle: "Continuing to try even when things are hard.",
-                icon: "https://static.wixstatic.com/media/ec3230_2236b60bcf35436a97fd4579b3d1dbd7~mv2.png/v1/fill/w_110,h_110,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Skill_Perseverance.png",
+                forParents: [
+                    { text: "K-2 Parent Resource", pdfUrl: "#" },
+                    { text: "3-5 Parent Resource", pdfUrl: "#" },
+                    { text: "6-8 Parent Resource", pdfUrl: "#" },
+                    { text: "9-12 Parent Resource", pdfUrl: "#" },
+                ],
+                forTeachers: [
+                    { text: "K-2 Teacher Guide", pdfUrl: "#" },
+                    { text: "3-5 Teacher Guide", pdfUrl: "#" },
+                    { text: "6-8 Teacher Guide", pdfUrl: "#" },
+                    { text: "9-12 Teacher Guide", pdfUrl: "#" },
+                ],
                 readingGuides: [
-                    {
-                        title: '"The Little Engine That Could" by Watty Piper',
-                        buttonText: "Reading Guide"
-                    },
-                    {
-                        title: '"Salt in His Shoes" by Deloris Jordan',
-                        buttonText: "Reading Guide"
-                    }
+                    { title: "The Little Engine that Could by Watty Piper", buttonText: "Reading guide", pdfUrl: "#" },
+                    { title: "Narrative of the Life of Frederick Douglass by Bess Streeter Aldrich", buttonText: "Reading guide", pdfUrl: "#" }
+                ],
+                additionalResources: [
+                    { text: "Skill Toolkit ⬇", pdfUrl: "#" }
                 ]
             },
-            "Grit": {
-                title: "Grit",
-                subtitle: "Working consistently toward my long-term goals.",
-                icon: "https://static.wixstatic.com/media/ec3230_b95fb1e80f81427ebf22837bfeabc001~mv2.png/v1/fill/w_108,h_108,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Skill_Grit.png",
+            "Grid": {
+                icon: "https://static.wixstatic.com/media/ec3230_b95fb1e80f81427ebf22837bfeabc001~mv2.png/v1/crop/x_45,y_0,w_1516,h_1605/fill/w_119,h_126,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Skill_Grit.png",
+                title: "Grid",
+                subtitle: "Building resilience and determination.",
+                forParents: [
+                    { text: "K-2 Parent Resource", pdfUrl: "#" },
+                    { text: "3-5 Parent Resource", pdfUrl: "#" },
+                    { text: "6-8 Parent Resource", pdfUrl: "#" },
+                    { text: "9-12 Parent Resource", pdfUrl: "#" },
+                ],
+                forTeachers: [
+                    { text: "K-2 Teacher Guide", pdfUrl: "#" },
+                    { text: "3-5 Teacher Guide", pdfUrl: "#" },
+                    { text: "6-8 Teacher Guide", pdfUrl: "#" },
+                    { text: "9-12 Teacher Guide", pdfUrl: "#" },
+                ],
                 readingGuides: [
-                    {
-                        title: '"The Road Not Taken" by Robert Frost',
-                        buttonText: "Reading Guide"
-                    },
-                    {
-                        title: '"The Twenty-One Balloons" by William Pène Du Bois',
-                        buttonText: "Reading Guide"
-                    }
+                    { title: "The Little Engine that Could by Watty Piper", buttonText: "Reading guide", pdfUrl: "#" },
+                    { title: "Narrative of the Life of Frederick Douglass by Bess Streeter Aldrich", buttonText: "Reading guide", pdfUrl: "#" }
+                ],
+                additionalResources: [
+                    { text: "Skill Toolkit ⬇", pdfUrl: "#" }
                 ]
             },
+
             "Gratitude": {
-                title: "Gratitude",
-                subtitle: "Appreciating the good things in life and expressing thankfulness.",
                 icon: "https://static.wixstatic.com/media/ec3230_5cca51678f084110abd9c67c98de9c14~mv2.png/v1/crop/x_45,y_0,w_1516,h_1605/fill/w_119,h_126,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Skill_Gratitude.png",
+                title: "Gratitude",
+                subtitle: "Building resilience and determination.",
+                forParents: [
+                    { text: "K-2 Parent Resource", pdfUrl: "#" },
+                    { text: "3-5 Parent Resource", pdfUrl: "#" },
+                    { text: "6-8 Parent Resource", pdfUrl: "#" },
+                    { text: "9-12 Parent Resource", pdfUrl: "#" },
+                ],
+                forTeachers: [
+                    { text: "K-2 Teacher Guide", pdfUrl: "#" },
+                    { text: "3-5 Teacher Guide", pdfUrl: "#" },
+                    { text: "6-8 Teacher Guide", pdfUrl: "#" },
+                    { text: "9-12 Teacher Guide", pdfUrl: "#" },
+                ],
                 readingGuides: [
-                    {
-                        title: '"The Thankful Book" by Todd Parr',
-                        buttonText: "Reading Guide"
-                    },
-                    {
-                        title: '"Gratitude is My Superpower" by Alicia Ortego',
-                        buttonText: "Reading Guide"
-                    }
+                    { title: "The Little Engine that Could by Watty Piper", buttonText: "Reading guide", pdfUrl: "#" },
+                    { title: "Narrative of the Life of Frederick Douglass by Bess Streeter Aldrich", buttonText: "Reading guide", pdfUrl: "#" }
+                ],
+                additionalResources: [
+                    { text: "Skill Toolkit ⬇", pdfUrl: "#" }
                 ]
             },
+
+
             "Responsibility": {
+                icon: "https://static.wixstatic.com/media/ec3230_fea834e7361042dd848ae3ae73955864~mv2.png/v1/crop/x_45,y_0,w_1516,h_1605/fill/w_119,h_126,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Skill_Responsibility.png",
                 title: "Responsibility",
-                subtitle: "Owning my actions, using good judgment and practicing self-control.",
-                icon: "https://static.wixstatic.com/media/ec3230_fea834e7361042dd848ae3ae73955864~mv2.png/v1/fill/w_110,h_110,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Skill_Responsibility.png",
+                subtitle: "Building resilience and determination.",
+                forParents: [
+                    { text: "K-2 Parent Resource", pdfUrl: "#" },
+                    { text: "3-5 Parent Resource", pdfUrl: "#" },
+                    { text: "6-8 Parent Resource", pdfUrl: "#" },
+                    { text: "9-12 Parent Resource", pdfUrl: "#" },
+                ],
+                forTeachers: [
+                    { text: "K-2 Teacher Guide", pdfUrl: "#" },
+                    { text: "3-5 Teacher Guide", pdfUrl: "#" },
+                    { text: "6-8 Teacher Guide", pdfUrl: "#" },
+                    { text: "9-12 Teacher Guide", pdfUrl: "#" },
+                ],
                 readingGuides: [
-                    {
-                        title: '"The Berenstain Bears and the Blame Game" by Stan Berenstain',
-                        buttonText: "Reading Guide"
-                    },
-                    {
-                        title: '"Alexander and the Terrible Day" by Judith Viorst',
-                        buttonText: "Reading Guide"
-                    }
+                    { title: "The Little Engine that Could by Watty Piper", buttonText: "Reading guide", pdfUrl: "#" },
+                    { title: "Narrative of the Life of Frederick Douglass by Bess Streeter Aldrich", buttonText: "Reading guide", pdfUrl: "#" }
+                ],
+                additionalResources: [
+                    { text: "Skill Toolkit ⬇", pdfUrl: "#" }
                 ]
             },
-            "Responsible Decision Making": {
-                title: "Responsible Decision Making",
-                subtitle: "Making thoughtful choices that consider consequences and ethics.",
+            "Responsible Decision-Making": {
                 icon: "https://static.wixstatic.com/media/ec3230_73c9da94861740c7bc840b8f5124be1f~mv2.png/v1/crop/x_45,y_0,w_1516,h_1605/fill/w_119,h_126,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Skill_Responsible%20Decision%20Making.png",
+                title: "Responsible Decision-Making",
+                subtitle: "Building resilience and determination.",
+                forParents: [
+                    { text: "K-2 Parent Resource", pdfUrl: "#" },
+                    { text: "3-5 Parent Resource", pdfUrl: "#" },
+                    { text: "6-8 Parent Resource", pdfUrl: "#" },
+                    { text: "9-12 Parent Resource", pdfUrl: "#" },
+                ],
+                forTeachers: [
+                    { text: "K-2 Teacher Guide", pdfUrl: "#" },
+                    { text: "3-5 Teacher Guide", pdfUrl: "#" },
+                    { text: "6-8 Teacher Guide", pdfUrl: "#" },
+                    { text: "9-12 Teacher Guide", pdfUrl: "#" },
+                ],
                 readingGuides: [
-                    {
-                        title: '"The Way I Act" by Steve Metzger',
-                        buttonText: "Reading Guide"
-                    },
-                    {
-                        title: '"Choices and Consequences" by Trevor Romain',
-                        buttonText: "Reading Guide"
-                    }
+                    { title: "The Little Engine that Could by Watty Piper", buttonText: "Reading guide", pdfUrl: "#" },
+                    { title: "Narrative of the Life of Frederick Douglass by Bess Streeter Aldrich", buttonText: "Reading guide", pdfUrl: "#" }
+                ],
+                additionalResources: [
+                    { text: "Skill Toolkit ⬇", pdfUrl: "#" }
                 ]
             },
-            "Critical Thinking": {
-                title: "Critical Thinking",
-                subtitle: "Analyzing information carefully to make informed decisions.",
+
+            "Critical Thinking & Problem Solving": {
                 icon: "https://static.wixstatic.com/media/ec3230_1a38780058a44281bc6b893d1260e2bf~mv2.png/v1/crop/x_45,y_0,w_1516,h_1605/fill/w_119,h_126,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Skill_Critical%20Thinking.png",
+                title: "Critical Thinking & Problem Solving",
+                subtitle: "Building resilience and determination.",
+                forParents: [
+                    { text: "K-2 Parent Resource", pdfUrl: "#" },
+                    { text: "3-5 Parent Resource", pdfUrl: "#" },
+                    { text: "6-8 Parent Resource", pdfUrl: "#" },
+                    { text: "9-12 Parent Resource", pdfUrl: "#" },
+                ],
+                forTeachers: [
+                    { text: "K-2 Teacher Guide", pdfUrl: "#" },
+                    { text: "3-5 Teacher Guide", pdfUrl: "#" },
+                    { text: "6-8 Teacher Guide", pdfUrl: "#" },
+                    { text: "9-12 Teacher Guide", pdfUrl: "#" },
+                ],
                 readingGuides: [
-                    {
-                        title: '"The Important Book" by Margaret Wise Brown',
-                        buttonText: "Reading Guide"
-                    },
-                    {
-                        title: '"Red Herring Mysteries" by Jim Sukach',
-                        buttonText: "Reading Guide"
-                    }
+                    { title: "The Little Engine that Could by Watty Piper", buttonText: "Reading guide", pdfUrl: "#" },
+                    { title: "Narrative of the Life of Frederick Douglass by Bess Streeter Aldrich", buttonText: "Reading guide", pdfUrl: "#" }
+                ],
+                additionalResources: [
+                    { text: "Skill Toolkit ⬇", pdfUrl: "#" }
                 ]
             },
+
             "Self-Awareness & Self-Management": {
+                icon: "https://static.wixstatic.com/media/ec3230_fe408358363b49b0a11bd86c7e17fd31~mv2.png/v1/crop/x_45,y_0,w_1516,h_1605/fill/w_119,h_126,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Skill_Self%20Awareness.png",
                 title: "Self-Awareness & Self-Management",
-                subtitle: "Understanding and governing our thoughts, actions and impact on others.",
-                icon: "https://static.wixstatic.com/media/ec3230_fe408358363b49b0a11bd86c7e17fd31~mv2.png/v1/fill/w_108,h_108,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Skill_Self%20Awareness.png",
+                subtitle: "Building resilience and determination.",
+                forParents: [
+                    { text: "K-2 Parent Resource", pdfUrl: "#" },
+                    { text: "3-5 Parent Resource", pdfUrl: "#" },
+                    { text: "6-8 Parent Resource", pdfUrl: "#" },
+                    { text: "9-12 Parent Resource", pdfUrl: "#" },
+                ],
+                forTeachers: [
+                    { text: "K-2 Teacher Guide", pdfUrl: "#" },
+                    { text: "3-5 Teacher Guide", pdfUrl: "#" },
+                    { text: "6-8 Teacher Guide", pdfUrl: "#" },
+                    { text: "9-12 Teacher Guide", pdfUrl: "#" },
+                ],
                 readingGuides: [
-                    {
-                        title: '"In My Heart: A Book of Feelings" by Jo Witek',
-                        buttonText: "Reading Guide"
-                    },
-                    {
-                        title: '"The Way I Feel" by Janan Cain',
-                        buttonText: "Reading Guide"
-                    }
+                    { title: "The Little Engine that Could by Watty Piper", buttonText: "Reading guide", pdfUrl: "#" },
+                    { title: "Narrative of the Life of Frederick Douglass by Bess Streeter Aldrich", buttonText: "Reading guide", pdfUrl: "#" }
+                ],
+                additionalResources: [
+                    { text: "Skill Toolkit ⬇", pdfUrl: "#" }
                 ]
             },
+
+
             "Mentorship": {
-                title: "Mentorship",
-                subtitle: "Guiding and supporting others in their growth and development.",
                 icon: "https://static.wixstatic.com/media/ec3230_9ae7b78cbc0b4e7fabb1ef852c547db5~mv2.png/v1/crop/x_0,y_61,w_1605,h_1482/fill/w_131,h_121,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Skill_Mentorship.png",
+                title: "Mentorship",
+                subtitle: "Building resilience and determination.",
+                forParents: [
+                    { text: "K-2 Parent Resource", pdfUrl: "#" },
+                    { text: "3-5 Parent Resource", pdfUrl: "#" },
+                    { text: "6-8 Parent Resource", pdfUrl: "#" },
+                    { text: "9-12 Parent Resource", pdfUrl: "#" },
+                ],
+                forTeachers: [
+                    { text: "K-2 Teacher Guide", pdfUrl: "#" },
+                    { text: "3-5 Teacher Guide", pdfUrl: "#" },
+                    { text: "6-8 Teacher Guide", pdfUrl: "#" },
+                    { text: "9-12 Teacher Guide", pdfUrl: "#" },
+                ],
                 readingGuides: [
-                    {
-                        title: '"Pay It Forward for Kids" by Catherine Ryan Hyde',
-                        buttonText: "Reading Guide"
-                    },
-                    {
-                        title: '"The Helper" by Catherine Choyce',
-                        buttonText: "Reading Guide"
-                    }
+                    { title: "The Little Engine that Could by Watty Piper", buttonText: "Reading guide", pdfUrl: "#" },
+                    { title: "Narrative of the Life of Frederick Douglass by Bess Streeter Aldrich", buttonText: "Reading guide", pdfUrl: "#" }
+                ],
+                additionalResources: [
+                    { text: "Skill Toolkit ⬇", pdfUrl: "#" }
                 ]
             },
+
+
             "Citizenship": {
-                title: "Citizenship",
-                subtitle: "Being an active, responsible member of the community.",
                 icon: "https://static.wixstatic.com/media/ec3230_6209b264f7e34e32b72d6f4f0e3d1dc0~mv2.png/v1/crop/x_45,y_0,w_1516,h_1605/fill/w_119,h_126,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Skill_Citizenship.png",
+                title: "Citizenship",
+                subtitle: "Building resilience and determination.",
+                forParents: [
+                    { text: "K-2 Parent Resource", pdfUrl: "#" },
+                    { text: "3-5 Parent Resource", pdfUrl: "#" },
+                    { text: "6-8 Parent Resource", pdfUrl: "#" },
+                    { text: "9-12 Parent Resource", pdfUrl: "#" },
+                ],
+                forTeachers: [
+                    { text: "K-2 Teacher Guide", pdfUrl: "#" },
+                    { text: "3-5 Teacher Guide", pdfUrl: "#" },
+                    { text: "6-8 Teacher Guide", pdfUrl: "#" },
+                    { text: "9-12 Teacher Guide", pdfUrl: "#" },
+                ],
                 readingGuides: [
-                    {
-                        title: '"We Are All Born Free" by Amnesty International',
-                        buttonText: "Reading Guide"
-                    },
-                    {
-                        title: '"The Kid Who Ran for President" by Dan Gutman',
-                        buttonText: "Reading Guide"
-                    }
+                    { title: "The Little Engine that Could by Watty Piper", buttonText: "Reading guide", pdfUrl: "#" },
+                    { title: "Narrative of the Life of Frederick Douglass by Bess Streeter Aldrich", buttonText: "Reading guide", pdfUrl: "#" }
+                ],
+                additionalResources: [
+                    { text: "Skill Toolkit ⬇", pdfUrl: "#" }
                 ]
             },
+
+
             "Honesty": {
-                title: "Honesty",
-                subtitle: "Being truthful and transparent in words and actions.",
                 icon: "https://static.wixstatic.com/media/ec3230_a2a36707aca54c078682a2209a54842b~mv2.png/v1/crop/x_45,y_0,w_1516,h_1605/fill/w_119,h_126,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Skill_Honesty.png",
+                title: "Honesty",
+                subtitle: "Building resilience and determination.",
+                forParents: [
+                    { text: "K-2 Parent Resource", pdfUrl: "#" },
+                    { text: "3-5 Parent Resource", pdfUrl: "#" },
+                    { text: "6-8 Parent Resource", pdfUrl: "#" },
+                    { text: "9-12 Parent Resource", pdfUrl: "#" },
+                ],
+                forTeachers: [
+                    { text: "K-2 Teacher Guide", pdfUrl: "#" },
+                    { text: "3-5 Teacher Guide", pdfUrl: "#" },
+                    { text: "6-8 Teacher Guide", pdfUrl: "#" },
+                    { text: "9-12 Teacher Guide", pdfUrl: "#" },
+                ],
                 readingGuides: [
-                    {
-                        title: '"The Empty Pot" by Demi',
-                        buttonText: "Reading Guide"
-                    },
-                    {
-                        title: '"Honestly, Red Riding Hood Was Rotten!" by Trisha Speed Shaskan',
-                        buttonText: "Reading Guide"
-                    }
+                    { title: "The Little Engine that Could by Watty Piper", buttonText: "Reading guide", pdfUrl: "#" },
+                    { title: "Narrative of the Life of Frederick Douglass by Bess Streeter Aldrich", buttonText: "Reading guide", pdfUrl: "#" }
+                ],
+                additionalResources: [
+                    { text: "Skill Toolkit ⬇", pdfUrl: "#" }
                 ]
             },
+
             "Empathy": {
+                icon: "https://static.wixstatic.com/media/ec3230_0f3736c65b6548598250e9f4927313a4~mv2.png/v1/crop/x_45,y_0,w_1516,h_1605/fill/w_119,h_126,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Skill_Empathy.png",
                 title: "Empathy",
-                subtitle: "Understanding others' thoughts, feelings and actions.",
-                icon: "https://static.wixstatic.com/media/ec3230_0f3736c65b6548598250e9f4927313a4~mv2.png/v1/fill/w_108,h_108,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Skill_Empathy.png",
+                subtitle: "Building resilience and determination.",
+                forParents: [
+                    { text: "K-2 Parent Resource", pdfUrl: "#" },
+                    { text: "3-5 Parent Resource", pdfUrl: "#" },
+                    { text: "6-8 Parent Resource", pdfUrl: "#" },
+                    { text: "9-12 Parent Resource", pdfUrl: "#" },
+                ],
+                forTeachers: [
+                    { text: "K-2 Teacher Guide", pdfUrl: "#" },
+                    { text: "3-5 Teacher Guide", pdfUrl: "#" },
+                    { text: "6-8 Teacher Guide", pdfUrl: "#" },
+                    { text: "9-12 Teacher Guide", pdfUrl: "#" },
+                ],
                 readingGuides: [
-                    {
-                        title: '"The Invisible Boy" by Trudy Ludwig',
-                        buttonText: "Reading Guide"
-                    },
-                    {
-                        title: '"Wonder" by R.J. Palacio',
-                        buttonText: "Reading Guide"
-                    }
+                    { title: "The Little Engine that Could by Watty Piper", buttonText: "Reading guide", pdfUrl: "#" },
+                    { title: "Narrative of the Life of Frederick Douglass by Bess Streeter Aldrich", buttonText: "Reading guide", pdfUrl: "#" }
+                ],
+                additionalResources: [
+                    { text: "Skill Toolkit ⬇", pdfUrl: "#" }
                 ]
-            }
+            },
         };
 
-        // Modal elements
-        const modal = document.getElementById('skill-modal');
-        const modalIcon = document.getElementById('modal-icon');
-        const modalTitle = document.getElementById('modal-title');
-        const modalSubtitle = document.getElementById('modal-subtitle');
-        const readingGuidesContent = document.getElementById('reading-guides-content');
-        const closeModalBtn = document.getElementById('close-modal');
+        const modal = document.getElementById("skill-modal");
+        const closeModalBtn = document.getElementById("close-modal");
 
-        // Function to populate reading guides
-        function populateReadingGuides(guides) {
-            readingGuidesContent.innerHTML = '';
-            guides.forEach(guide => {
-                const guideDiv = document.createElement('div');
-                guideDiv.className = 'mb-3 last:mb-0';
-                guideDiv.innerHTML = `
-                    <p class="text-sm font-medium text-gray-700 mb-2">${guide.title}</p>
-                    <button class="bg-yellow-400 text-gray-800 px-4 py-2 rounded text-sm font-semibold hover:bg-yellow-500 transition-colors">
-                        ${guide.buttonText} ⬇
-                    </button>
-                `;
-                readingGuidesContent.appendChild(guideDiv);
-            });
-        }
+        const modalIcon = document.getElementById("modal-icon");
+        const modalTitle = document.getElementById("modal-title");
+        const modalSubtitle = document.getElementById("modal-subtitle");
 
-        // Function to open modal
-        function openModal(skillName) {
-            const data = modalData[skillName];
-            if (!data) return;
+        const parentsContent = document.getElementById("parents-content");
+        const teachersContent = document.getElementById("teachers-content");
+        const readingGuidesContent = document.getElementById("reading-guides-content");
+        const additionalResourcesContent = document.getElementById("additional-resources-content");
 
-            modalIcon.src = data.icon;
-            modalIcon.alt = data.title;
-            modalTitle.textContent = data.title;
-            modalSubtitle.textContent = data.subtitle;
+        // Handle card clicks
+        document.querySelectorAll("[data-skill]").forEach(card => {
+            card.addEventListener("click", () => {
+                const skill = card.getAttribute("data-skill");
+                const data = modalData[skill];
+                if (!data) return;
 
-            populateReadingGuides(data.readingGuides);
+                modalIcon.src = data.icon;
+                modalTitle.textContent = data.title;
+                modalSubtitle.textContent = data.subtitle;
 
-            modal.classList.remove('hidden');
-            document.body.style.overflow = 'hidden'; // Prevent background scrolling
-        }
+                // Parents
+                parentsContent.innerHTML = "";
+                (data.forParents || []).forEach(item => {
+                    const btn = document.createElement("button");
+                    btn.className = "bg-yellow-400 text-gray-800 px-3 py-2 rounded text-sm font-semibold hover:bg-yellow-500 transition-colors";
+                    btn.textContent = item.text;
+                    btn.onclick = () => window.open(item.pdfUrl, "_blank");
+                    parentsContent.appendChild(btn);
+                });
 
-        // Function to close modal
-        function closeModal() {
-            modal.classList.add('hidden');
-            document.body.style.overflow = 'auto'; // Restore scrolling
-        }
+                // Teachers
+                teachersContent.innerHTML = "";
+                (data.forTeachers || []).forEach(item => {
+                    const btn = document.createElement("button");
+                    btn.className = "bg-blue-600 text-white px-3 py-2 rounded text-sm font-semibold hover:bg-blue-700 transition-colors";
+                    btn.textContent = item.text;
+                    btn.onclick = () => window.open(item.pdfUrl, "_blank");
+                    teachersContent.appendChild(btn);
+                });
 
-        // Event listeners for cards
-        document.querySelectorAll('[data-skill]').forEach(card => {
-            card.addEventListener('click', function () {
-                const skillName = this.dataset.skill;
-                openModal(skillName);
+                // Reading guides
+                readingGuidesContent.innerHTML = "";
+                (data.readingGuides || []).forEach(guide => {
+                    const guideDiv = document.createElement("div");
+                    guideDiv.className = "flex justify-between items-center bg-white p-3 rounded shadow mb-2";
+                    guideDiv.innerHTML = `<span class="text-gray-800">${guide.title}</span>`;
+                    const btn = document.createElement("button");
+                    btn.className = "bg-green-600 text-white px-3 py-1 rounded hover:bg-green-700";
+                    btn.textContent = guide.buttonText;
+                    btn.onclick = () => window.open(guide.pdfUrl, "_blank");
+                    guideDiv.appendChild(btn);
+                    readingGuidesContent.appendChild(guideDiv);
+                });
+
+                // Additional resources
+                additionalResourcesContent.innerHTML = "";
+                (data.additionalResources || []).forEach(resource => {
+                    const btn = document.createElement("button");
+                    btn.className = "bg-blue-800 text-white px-6 py-3 rounded font-semibold hover:bg-blue-900 transition-colors w-full";
+                    btn.textContent = resource.text;
+                    btn.onclick = () => window.open(resource.pdfUrl, "_blank");
+                    additionalResourcesContent.appendChild(btn);
+                });
+
+                modal.classList.remove("hidden");
             });
         });
 
-        // Event listener for close button
-        closeModalBtn.addEventListener('click', closeModal);
-
-        // Event listener for clicking outside modal
-        modal.addEventListener('click', function (e) {
-            if (e.target === modal) {
-                closeModal();
-            }
-        });
-
-        // Event listener for ESC key
-        document.addEventListener('keydown', function (e) {
-            if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
-                closeModal();
-            }
+        // Close modal
+        closeModalBtn.addEventListener("click", () => modal.classList.add("hidden"));
+        modal.addEventListener("click", e => {
+            if (e.target === modal) modal.classList.add("hidden");
         });
     </script>
 
 
+
+    <script>
+        const form = document.getElementById("emailForm");
+        const responseMsg = document.getElementById("responseMsg");
+
+        form.addEventListener("submit", async (e) => {
+            e.preventDefault();
+            const email = document.getElementById("email").value;
+
+            try {
+                const res = await fetch("http://localhost:5000/subscribe", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ email }),
+                });
+
+                const data = await res.json();
+                responseMsg.textContent = data.message || "Something went wrong!";
+                responseMsg.classList.remove("text-red-600");
+                responseMsg.classList.add("text-green-600");
+                form.reset();
+            } catch (err) {
+                console.error(err);
+                responseMsg.textContent = "Failed to subscribe. Try again.";
+                responseMsg.classList.remove("text-green-600");
+                responseMsg.classList.add("text-red-600");
+            }
+        });
+    </script>
 
 </body>
 
